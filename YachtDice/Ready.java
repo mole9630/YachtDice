@@ -4,7 +4,21 @@ import java.util.Scanner;
 
 public class Ready {
     public int playerJoin() {
-        System.out.println("***** 欢迎进入快艇骰子游戏系统 *****");
+        System.out.println("************************* 快艇骰子 ************************");
+        System.out.println("*               下面为您介绍快艇骰子的简易规则:               *");
+        System.out.println("*            一点: 分数得显示点数为一的骰子的点数加起来。        *");
+        System.out.println("*           二点: 分数得显示点数为二的骰子的点数加起来。         *");
+        System.out.println("*           三点: 分数得显示点数为三的骰子的点数加起来。         *");
+        System.out.println("*          四点: 分数得显示点数为四的骰子的点数加起来。          *");
+        System.out.println("*           五点: 分数得显示点数为五的骰子的点数加起来。         *");
+        System.out.println("*          六点: 分数得显示点数为六的骰子的点数加起来。          *");
+        System.out.println("*               全选：将五个骰子点数和作为所得分数。            *");
+        System.out.println("*  四骰同花: 为四个点数相同骰子的组合，将五个骰子点数和作为所得分数。 *");
+        System.out.println("* 葫芦：为三个点数相同骰子和另外两个点数相同骰子的组合， 分数得25分。 *");
+        System.out.println("*       小顺：骰子点数排列为1234、2345、3456者，分数得30分。     *");
+        System.out.println("*         大顺：骰子点数排列为12345、23456者，分数得40分。       *");
+        System.out.println("*        快艇：为五个点数相同骰子的组合， 第一次分数得50分。       *");
+        System.out.println("***********************************************************\n");
         System.out.println("请输入玩家数:");
         Scanner in = new Scanner(System.in);
         int playerCount = in.nextInt();
@@ -55,8 +69,8 @@ public class Ready {
         System.out.println("\n*****正在载入玩家信息,请稍后 *****");
         for (int i=0;i<playerName.length;i++)
         {
-            System.out.println("载入第" + i + "名玩家名成功:" + playerName[i]);
+            System.out.println("载入第" + i+1 + "名玩家名成功:" + playerName[i]);
         }
-        System.out.println("***** 所有玩家均载入成功,游戏准备加入 *****");
+        System.out.println("***** 所有玩家均载入成功,游戏准备加入 *****\n");
     }
 }
